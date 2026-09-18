@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tosh Qog‘oz Qaychi — AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>✊ Tosh 📄 Qog‘oz ✂️ Qaychi</h1>
+    <p class="subtitle">Sun’iy intellekt bilan o‘ynang 🤖</p>
+
+    <div class="score">
+        <div>👤 Siz: <span id="userScore">0</span></div>
+        <div>🤖 Kompyuter: <span id="computerScore">0</span></div>
+    </div>
+
+    <div class="game">
+
+        <div class="player-card user-card">
+            <h2>👤 Siz</h2>
+            <div id="userChoice" class="big-choice">❔</div>
+            <p id="userText">Tanlovingiz</p>
+        </div>
+
+        <div class="versus">VS</div>
+
+        <div class="player-card computer-card">
+            <h2>🤖 Sun’iy intellekt</h2>
+            <div id="computerChoice" class="big-choice">❔</div>
+            <p id="computerText">Kompyuter tanlovi</p>
+        </div>
+
+    </div>
+
+    <h2 class="choose-title">Tanlovingizni bosing:</h2>
+
+    <div class="buttons">
+        <button onclick="play('tosh')">✊<span>Tosh</span></button>
+        <button onclick="play('qogoz')">📄<span>Qog‘oz</span></button>
+        <button onclick="play('qaychi')">✂️<span>Qaychi</span></button>
+    </div>
+
+    <div id="result" class="result">
+        O‘yin boshlash uchun tanlov qiling!
+    </div>
+
+    <button class="restart" onclick="restartGame()">
+        🔄 Qayta boshlash
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
